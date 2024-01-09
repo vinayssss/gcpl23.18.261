@@ -51,6 +51,11 @@ view: users {
     sql: ${TABLE}."NAME" ;;
   }
 
+  measure: name_list {
+    type: list
+    list_field: name
+  }
+
   dimension: yyyymmdd_at {
     type: number
     sql: ${TABLE}."YYYYMMDD_AT" ;;
